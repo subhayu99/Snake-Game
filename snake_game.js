@@ -45,7 +45,7 @@ function mousePressed(){
       s.dir(0,-1);
       s.head = [50, 50, 0, 0];
       if (navigator.vibrate) { 
-        window.navigator.vibrate(30); 
+        window.navigator.vibrate(35); 
       } 
     }
     else if (mouseY>=(height-100) && mouseY<=(height-0))
@@ -53,7 +53,7 @@ function mousePressed(){
       s.dir(0, 1);
       s.head = [0, 0, 50, 50];
       if (navigator.vibrate) { 
-        window.navigator.vibrate(30); 
+        window.navigator.vibrate(35); 
       }
     }
     else if (mouseY>=(height-200) && mouseY<=(height-100)) // pauses the game
@@ -72,7 +72,7 @@ function mousePressed(){
       s.head = [50, 0, 0, 50];
       s.dir(-1,0);
       if (navigator.vibrate) { 
-        window.navigator.vibrate(30); 
+        window.navigator.vibrate(35); 
       }
     }
     else if(mouseX>=((width/2)+50) && mouseX<=((width/2)+150))
@@ -80,7 +80,7 @@ function mousePressed(){
       s.head = [0, 50, 50, 0];
       s.dir(1,0);
       if (navigator.vibrate) { 
-        window.navigator.vibrate(30); 
+        window.navigator.vibrate(35); 
       }
     }
   }
@@ -98,8 +98,6 @@ function draw() {
   fill(255)
   // rect((width/2)-152, height-332, 304, 304);
   image(buttons, (width/2)-150, height-330, 300, 300);
-  noFill();
-  rect((width/2)-150, height-250, 100, 100);
   if(s.eat(food)){
     pickLocation();
     if (navigator.vibrate) { 
