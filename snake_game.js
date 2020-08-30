@@ -120,6 +120,6 @@ function draw() {
   // food display properties
   stroke(0, 0, 0);
   strokeWeight(1.5);
-  fill(224, 25, 50, 220);
+  fill(244, 5, 40, 220);
   rect(food.x, food.y, scl, scl, 90, 90, 90, 90);
 }
