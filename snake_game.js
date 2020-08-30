@@ -98,7 +98,8 @@ function draw() {
   fill(255)
   // rect((width/2)-152, height-332, 304, 304);
   image(buttons, (width/2)-150, height-330, 300, 300);
-  
+  noFill();
+  rect((width/2)-150, height-250, 100, 100);
   if(s.eat(food)){
     pickLocation();
     if (navigator.vibrate) { 
@@ -119,6 +120,6 @@ function draw() {
   // food display properties
   stroke(0, 0, 0);
   strokeWeight(1.5);
-  fill(250, 1, 100);
+  fill(224, 25, 50, 220);
   rect(food.x, food.y, scl, scl, 90, 90, 90, 90);
 }

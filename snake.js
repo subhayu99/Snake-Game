@@ -68,9 +68,29 @@ function Snake() {
     strokeWeight(1.5);
     fill(210);
     for (let i = 0; i < this.tail.length; i++) {
-      rect(this.tail[i].x, this.tail[i].y, scl, scl);
+      rect(this.tail[i].x, this.tail[i].y, scl, scl, 2, 2, 2, 2);
     }
     fill(255);
     rect(this.x, this.y, scl, scl, this.head[0], this.head[1], this.head[2], this.head[3]);
+    if(this.xspeed===1){ // RIGHT
+      ellipse(this.x+(3*(scl/5)), this.y+(scl/3), 2, 2);
+      line(this.x + scl/2, this.y + (6*(scl/10)), this.x + scl, this.y + (7*(scl/10)));
+      // triangle(this.x-(this.tail.length*scl), this.y, this.x-(this.tail.length*scl), this.y+scl, this.x-((this.tail.length+1)*scl), this.y+(scl/2));
+    }
+    else if(this.xspeed===-1){ // LEFT
+      ellipse(this.x+(2*(scl/5)), this.y+(scl/3), 2, 2);
+      line(this.x, this.y + (7*(scl/10)), this.x + scl/2, this.y + (6*(scl/10)));
+      // triangle(this.x+scl+(this.tail.length*scl), this.y, this.x+scl+(this.tail.length*scl), this.y+scl, this.x+((this.tail.length+2)*scl), this.y+(scl/2));
+    }
+    else if(this.yspeed===-1){ // UP
+      ellipse(this.x+(scl/3), this.y+(2*(scl/5)), 2, 2);
+      line(this.x + (7*(scl/10)), this.y, this.x + (6*(scl/10)), this.y + scl/2);
+      // triangle(this.x, this.y+scl+(this.tail.length*scl), this.x+scl, this.y+scl+(this.tail.length*scl), this.x+(scl/2), this.y+((this.tail.length+2)*scl));
+    }
+    else if (this.yspeed === 1) { // DOWN
+      ellipse(this.x+(scl/3), this.y+(3*(scl/5)), 2, 2);
+      line(this.x + (6*(scl/10)), this.y + scl/2, this.x + (7*(scl/10)), this.y + scl);
+      // triangle(this.x, this.y - (this.tail.length * scl), this.x+scl, this.y - (this.tail.length * scl), this.x + (scl / 2), this.y - ((this.tail.length + 1) * scl));
+    }
   };
 }
