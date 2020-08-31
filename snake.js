@@ -1,7 +1,4 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/AaGK-fj-BAM
+// Snake Game
 
 //this operator refers to the owner object, in our case it will be s i.e snake
 function Snake() {
@@ -66,7 +63,7 @@ function Snake() {
   this.show = function() {
     stroke(0, 0, 0);
     strokeWeight(1.5);
-    fill(210);
+    fill(255);
     for (let i = 0; i < this.tail.length; i++) {
       rect(this.tail[i].x, this.tail[i].y, scl, scl, 2, 2, 2, 2);
     }
