@@ -4,7 +4,7 @@
 # How to contribute!
 
 ## Steps:
--  Firstly, I would suggest you to create an issue for the development you want to make in the project. Though it isn't mandatory, but will surely help me🙂.
+-  Firstly, I would suggest you to create an issue for the development you want to make in the project. Though it isn't mandatory, but will surely help me.🙂
   
 -  Fork this [repository](https://github.com/subhayu99/Snake-Game)
   
