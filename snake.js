@@ -1,11 +1,11 @@
 // Snake Game
 
-//this operator refers to the owner object, in our case it will be s i.e snake
+
 function Snake() {
   this.x = width/2; //position along x
   this.y = width/2; //positon along y
-  this.xspeed = 0; //speed 
-  this.yspeed = 0;
+  this.xspeed = 0; //speed in x-axis
+  this.yspeed = 0; //speed in y-axis
   this.total = 0; //total length initally
   this.head = [50, 50, 50, 50]
   this.tail = []; //array of the tail
