@@ -10,3 +10,4 @@ I made this game for **Gaming Booster 2020** hosted by **GirlScript Ireland** in
 
 ## Contribution
 You are welcome to contribute to this project and you don't need to have an expertise on coding. Kindly, go through this [Contribution](Contribution.md) guideline before proceeding.
+File structure map can be found [here](https://app.codesee.io/maps/public/1bcdc620-23a1-11ec-a096-cfd59e99ca24).
